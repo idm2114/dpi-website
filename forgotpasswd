@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+  echo "Usage: ./sendemails <username> <email>"
+else
+     link=$1;
+     email=$2;
+     touch emailbody.html;
+         echo "<html><body><p>Hello,<br><br> A request to reset your Columbia DPI account password was just made. If you made this request, click the link below to continue. <br><br><h3><a href='https://columbiadpi.com/resetpassword.php?${link}'>reset your password</a></h3><br><br> If you did not make this request, just ignore this email.<br><br>Best,<br>The DPI E-board</p><br><br><p style='text-align: center;'><i>Please do not reply to this email</i></p></body></html>" > emailbody.html
+         mutt -s "DPI Password Reset" -e "set content_type=text/html" -i emailbody.html $email
+         sleep 1
+    rm emailbody.html
+fi

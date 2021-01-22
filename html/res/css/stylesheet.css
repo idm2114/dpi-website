@@ -1,0 +1,551 @@
+
+/* importing fonts */
+@font-face {
+    font-family: adventproregular;
+    src: url(../fonts/advent-pro/adventpro-regular.ttf);
+}
+@font-face {
+    font-family: adventprobold;
+    src: url(../fonts/advent-pro/adventpro-bold.ttf);
+} @font-face {
+    font-family: adventprosemibold;
+    src: url(../fonts/advent-pro/adventpro-semibold.ttf);
+}
+@font-face {
+    font-family: adventpromedium;
+    src: url(../fonts/advent-pro/adventpro-medium.ttf);
+}
+
+/* general */
+body {
+    background-color: #fb3241;
+}
+
+input[type=text], input[type=password], input[type=url], input[type=date], input[type=time] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: none;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+} 
+ 
+a:link, a:visited {
+    font-size: 20px;
+    color: #ffffff;
+} 
+
+::placeholder {
+    color: #ffffff;
+    opacity: .8; 
+}
+
+/* for navbar */
+.navbar-image {
+    z-index: 1;
+}
+
+#navbar-image img {
+    z-index: 1;
+    position: fixed;
+    padding-top: 4vh;
+    padding-left: 5vw;
+    width: 10%;
+}
+
+#navbar ul {
+  background-color: #fb3241;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding-left: 20vw;
+  padding-top: 6vh;
+  width: 100%;
+  font-family: adventprobold; 
+  font-size: 24px; 
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: lightgray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: adventprobold; 
+  font-size: 24px; 
+}
+
+#navbar li a:hover:not(.active) {
+  color: #ffffff;
+  font-family: adventprobold; 
+  font-size: 24px; 
+}
+
+#navbar .active {
+  color: #ffffff;
+  font-family: adventprobold; 
+  font-size: 24px; 
+}
+
+/* for landing page */
+.landing-container {
+    font-family: adventprobold;
+    display: absolute;
+    width: 50vw;
+    height: 40vh;
+    padding-left: 30vw;
+    padding-top: 20vh;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* for changing passwords */
+.change-passwd-container {
+    font-family: adventproregular;
+    padding-left: 25vw;
+    padding-right:25vw;
+    text-align:center;
+    width: 50vw;
+    height: 30vh;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.btn-primary {
+    background: none;
+    border: solid 2px #ffffff;
+    color: white;
+    padding-top: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: adventproregular;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    background: #ffffff;
+    border: solid 2px #ffffff;
+    color: #fb3241;
+    padding-top: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: adventproregular;
+    font-size: 20px;
+}
+/* for listing projects */
+.split {
+    width: 49vw;
+    height: 100vh;
+    float: left;
+}
+.title {
+    width: 100%;
+    padding-left: 5vw;
+    padding-top: 15vh;
+    font-family: adventprobold;
+    font-size: 96px;
+    color: #ffffff;
+}
+.projects-container {
+    width: 30vw;
+    padding-left: 20vw;
+}
+.projects-title {
+    font-family: adventproregular;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: left;
+}
+.projects-members {
+    font-family: adventprobold;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 40vw;
+    padding-right: 10vw;
+    padding-top: 25vh;
+}
+.projects-text {
+    font-family: adventproregular;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 40vw;
+    height: 60vh;
+    padding-right: 10vw;
+    /* padding-top: 20vh; */
+} 
+
+/* for php redirects */ 
+.php-redirect {
+    font-family: adventproregular;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 60vw;
+    padding-left: 20vw;
+    padding-top: 10vh;
+}
+
+/* for events */
+.events-name {
+    font-family: adventprobold;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 40vw;
+    padding-right: 10vw;
+    padding-top: 25vh;
+}
+
+.events-location {
+    font-family: adventprosemibold;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 40vw;
+    padding-right: 10vw;
+}
+
+#events-location a {
+    font-family: adventprosemibold;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.events-host {
+    font-family: adventprobold;
+    color: #ffffff;
+    text-align: left;
+    font-size: 30px;
+    width: 40vw;
+    padding-right: 10vw;
+    padding-top: 25vh;
+}
+
+.events-date {
+    font-family: adventpromedium;
+    color: #ffffff;
+    text-align: right;
+    font-size: 30px;
+    width: 40vw;
+    padding-right: 10vw;
+} 
+
+.events-text {
+    font-family: adventproregular;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 40vw;
+    padding-right: 10vw;
+} 
+
+/* for new events */
+.addnewevent { 
+    font-family: adventproregular;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 20vw;
+    padding-top: 3vh;
+} 
+
+.new-event-container {
+    font-family: adventproregular;
+    padding-left: 25vw;
+    padding-right:25vw;
+    text-align:center;
+    width: 50vw;
+    height: 30vh;
+    color: #ffffff;
+    font-size: 20px;
+    padding-bottom: 10vh;
+}
+
+.btn-primary {
+    background: none;
+    border: solid 2px #ffffff;
+    color: white;
+    padding-top: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: adventproregular;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    background: #ffffff;
+    border: solid 2px #ffffff;
+    color: #fb3241;
+    padding-top: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: adventproregular;
+    font-size: 20px;
+}
+
+/* for resources tables */ 
+
+.resources-table {
+    padding-top:25vh;
+    width: 40vw;
+    padding-right: 10vw;
+    overflow-y: auto;
+}
+
+.resources-th {
+    font-family: adventprobold;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 3vh;
+}
+
+.resources-tr {
+    font-family: adventpromedium;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.resources-td, .resources-td a {
+    font-family: adventpromedium;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    width: 20vw;
+    padding-bottom: 3vh;
+}
+
+/* for the calendar widget */
+
+/* ---------- GENERAL ---------- */
+
+#calendar-container body {
+	background: #f9f9f9;
+	color: #0e171c;
+	/* margin: 0; */
+    font-family: adventproregular; 
+}
+
+#calendar-container a {
+	text-decoration: none;
+    font-family: adventprobold; 
+}
+
+#calendar-container h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
+}
+
+#calendar-container h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+
+#calendar-container table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.calendar-container {
+    padding-top: 3vh;
+    padding-left: 4vw; 
+    width: 40vw;
+    height: 80vh;
+    background-color: #fff;
+}
+
+.show-event {
+    padding-top:2vh;
+    padding-left:4vw;
+    font-family: adventprobold;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+	text-align: center;
+    font-family: adventprobold; 
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #fb3241;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%; 
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #fb3241;
+	color: #f9f9f9;
+}
+
+.calendar-event {
+    font-family: adventprobold; 
+	cursor: pointer;
+	position: relative;
+}
+
+.calendar-event:after {
+	background: #fb3241;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.calendar-event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}
+
+/* calendar styling for displaying events */
+
+.calendar-dayofweek {
+    font-family: adventprobold;
+    color: #ffffff;
+    text-align: left;
+    font-size: 40px;
+    width: 30vw;
+    padding-left: 10vw;
+}
+
+.calendar-name {
+    font-family: adventprobold;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    width: 30vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.calendar-location {
+    font-family: adventprosemibold;
+    color: #ffffff;
+    text-align: right;
+    font-size: 30px;
+    width: 30vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#calendar-location a {
+    font-family: adventprosemibold;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.calendar-host {
+    font-family: adventprobold;
+    color: #ffffff;
+    text-align: right;
+    font-size: 30px;
+    width: 30vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.calendar-date {
+    font-family: adventprosemibold;
+    color: #ffffff;
+    text-align: right;
+    font-size: 30px;
+    width: 30vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.calendar-text {
+    font-family: adventproregular;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 30vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+} 
+
+.title-small {
+    width: 40%;
+    padding-left: 5vw;
+    padding-top: 15vh;
+    font-family: adventprobold;
+    font-size: 96px;
+    color: #ffffff;
+}

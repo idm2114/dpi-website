@@ -1,0 +1,6 @@
+## NEXT STEPS TO DO FOR WEBSITE ##
+
+ - fix addnewevents with a loading button that loads next x events onclick
+ - fix home page (maybe add some image assets or something cool)
+ - change events page so that it displays as a calendar 
+   - reference: https://codepen.io/gabrielcolombo/pen/LGzNwq

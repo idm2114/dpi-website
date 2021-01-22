@@ -1,0 +1,23 @@
+## SKELETON LAYOUT FOR WEBSITE ##
+
+html and php
+\_landing.php
+\_index.php
+\_projects.php
+\_events.php
+  \_addnewevent.php
+\_login.php
+  \_resources.php
+  \_changepassword.php
+  \_logout.php
+
+## ALL RESOURCES REFERENCED BY HTML AND PHP ##
+res
+\_css
+  \_stylesheet.css
+\_javascript
+  \_(all javascript files)
+\_images
+  \_favicon
+    \_(all favicon resources)
+  \_logos
